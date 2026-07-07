@@ -742,7 +742,8 @@ async def info(interaction: discord.Interaction):
         "**/edit_seeding** — Manually adds or removes wins/points from a team in seeding.\n"
         "**/end_seeding** — Ends the seeding round and displays which teams advanced.\n\n"
         "CGTC Season Management System - Created by Had3s"), color=0xB3B3FC)
-    await interaction.response.send_message(embed=embed, ephemeral=True)
+    await interaction.response.send_message("Info sent", ephemeral=True)
+    await interaction.channel.send(embed=embed)
 
 
 Free_commands = {
