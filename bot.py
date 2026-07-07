@@ -13,19 +13,19 @@ from datetime import datetime, timezone
 
 
 # ── Server & Role IDs ─────────────────────────────────────────────────────────
-Server_id = discord.Object(id=1508632632152555611)
+Server_id = discord.Object(id=1521991917729222657)
 
-Commentator_role = 1508632632194498682
-Referee_role     = 1508632632202760393
-Caster_role      = 1508632632202760394
-team_player_role = 1511536468387041340
+Commentator_role = None
+Referee_role     = None
+Caster_role      = None
+team_player_role = 1524100467746144306
 
 # ── Channel IDs ───────────────────────────────────────────────────────────────
-Transaction_channel  = 1508632633935007766
-Audit_log_channel    = 1508632634945966253
-Scrims_channel       = 1508632959824035930
-Scrim_score_channel  = 1508633013867647006
-Officials_channel    = 1508632634522075152
+Transaction_channel  = 1522110757297459330
+Audit_log_channel    = None
+Scrims_channel       = None
+Scrim_score_channel  = None
+Officials_channel    = None
 
 # run on railway
 Data_Railway = os.getenv("Data_Railway", "/data")
@@ -39,7 +39,7 @@ Scrim_channel_file  = os.path.join(Data_Railway, "scrim_channels.json")
 Player_history_file = os.path.join(Data_Railway, "player_history.json")
 
 # ── Premium ───────────────────────────────────────────────────────────────────
-Paid_for_premium = {Server_id.id}
+Paid_for_premium = {}
 Premium_enabled  = Server_id.id in Paid_for_premium
 print("Premium features enabled." if Premium_enabled else "Premium features are not enabled.")
 
